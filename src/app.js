@@ -6,6 +6,8 @@ import morgan from "morgan";
 
 const app = express();
 
+//settings
+app.set("port", process.env.PORT || 3000);
 app.set("views", path.join(__dirname, "views"));
 
 const exphbs = create({
